@@ -43,10 +43,10 @@ const showData = () => {
       <h5>${datas[i].startDate}</h5>
       <p>${datas[i].description}</p>
       <div class="tech-icon">
-        <img src="assets/icon/node.svg" />
-        <img src="assets/icon/next-js.svg" />
-        <img src="assets/icon/react.svg" />
-        <img src="assets/icon/typescript.svg" />
+      ${datas[i].nodeJs ? '<img src="assets/icon/node.svg" />' : ''}
+      ${datas[i].nextJs ? '<img src="assets/icon/next-js.svg" />' : ''}
+      ${datas[i].reactJs ? '<img src="assets/icon/react.svg" />' : ''}
+      ${datas[i].typeScript ? '<img src="assets/icon/typescript.svg" />' : ''}
       </div>
       <div class="manipulation">
         <a href="#">Edit</a>
